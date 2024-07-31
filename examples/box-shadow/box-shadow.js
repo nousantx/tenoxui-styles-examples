@@ -1,10 +1,12 @@
 const boxShadow = {
+  // box-shadow related types and properties
   property: {
     shadow: "boxShadow",
-    "shadow-color": "--shadow-color",
     "shadow-opacity": "--shadow-opa"
   },
+  // utility classes
   classes: {
+    // generate colors for shadow color css variable
     "--shadow-color": useRgbColor(colors, "shadow"),
     boxShadow: {
       "shadow-sm": "0 1px 2px 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opa, 0.05))",
