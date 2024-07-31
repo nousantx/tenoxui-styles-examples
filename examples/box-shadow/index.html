@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../../src/@tenoxui/tenoxui.js"></script>
+    <script src="../../src/@tenoxui/property.js"></script>
+    <script src="../../src/color.js"></script>
+    <script src="../../src/utils/generate-color.js"></script>
+    <script src="../../src/utils/merge-classes.js"></script>
+    <script src="../../src/box-shadow.js"></script>
+  </head>
+  <body>
+    <main class="d-flex w-100 flex-parent-center fd-column">
+      <div class="box-100px br-8px shadow-sm"></div>
+      <div class="box-100px br-8px mt-2rem shadow"></div>
+      <div class="box-100px br-8px mt-2rem shadow-md"></div>
+      <div class="box-100px br-8px mt-2rem shadow-lg"></div>
+      <div class="box-100px br-8px mt-2rem shadow-xl shadow-lime-800"></div>
+      <div
+        class="box-100px br-8px mt-2rem shadow-2xl shadow-opacity-0.3 shadow-red-500 hover:shadow-blue-500 tr-time-0.3s"
+      ></div>
+      <div class="box-100px br-8px mt-2rem shadow-inner"></div>
+      <div class="box-100px bg-red br-8px mt-2rem shadow-none"></div>
+    </main>
+    <script>
+      use({ property: [property, boxShadow.property], classes: boxShadow.classes });
+      tenoxui();
+    </script>
+  </body>
+</html>
