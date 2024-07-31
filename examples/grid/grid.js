@@ -1,6 +1,5 @@
 const grid = {
   property: {
-    grid: "display",
     "grid-cols": {
       property: "gridTemplateColumns",
       value: "repeat({value}, minmax(0, 1fr))"
