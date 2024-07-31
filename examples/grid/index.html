@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../../src/@tenoxui/tenoxui.js"></script>
+    <script src="../../src/@tenoxui/property.js"></script>
+    <script src="../../src/lib/color.js"></script>
+    <script src="../../src/utils/generate-color.js"></script>
+    <script src="../../src/utils/merge-classes.js"></script>
+    <script src="./grid.js"></script>
+  </head>
+  <body>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="col-span-2 row-span-1 bg-red">Item 1</div>
+      <div class="bg-red">Item 2</div>
+      <div class="bg-red">Item 3</div>
+      <div class="col-span-3 bg-red">Item 4</div>
+    </div>
+    <script>
+      use({ property: [property, grid.property], classes: grid.classes });
+      tenoxui();
+    </script>
+  </body>
+</html>
