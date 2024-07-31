@@ -1,3 +1,8 @@
+/*!
+ * This file includes `box-shadow`'s utilities from Tailwind CSS (https://tailwindcss.com/docs/box-shadow#adding-an-outer-shadow).
+ * See https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE for more details.
+ */
+
 const boxShadow = {
   // box-shadow related types and properties
   property: {
@@ -7,7 +12,7 @@ const boxShadow = {
   // utility classes
   classes: {
     // generate colors for shadow color css variable
-    "--shadow-color": useRgbColor(colors, "shadow"),
+    "--shadow-color": createRGBColors(colors, "shadow"),
     boxShadow: {
       "shadow-sm": "0 1px 2px 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opa, 0.05))",
       shadow:
