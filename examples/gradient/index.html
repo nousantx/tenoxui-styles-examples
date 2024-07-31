@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../../src/@tenoxui/tenoxui.js"></script>
+    <script src="../../src/@tenoxui/property.js"></script>
+    <script src="../../src/lib/color.js"></script>
+    <script src="../../src/utils/generate-color.js"></script>
+    <script src="../../src/utils/merge-classes.js"></script>
+    <script src="./gradient.js"></script>
+  </head>
+  <body>
+   <main class="d-flex w-100 flex-parent-center fd-column">
+      <!-- basic usage -->
+      <div class="box-100px gradient gradient-from-fuchsia-400 gradient-to-stop-50%"></div>
+      <div
+        class="box-100px gradient gradient-from-fuchsia-400 gradient-to-stone-400 [--gradient-direction]-45deg"
+      ></div>
+
+      <!-- complex -->
+      <div
+        class="mt-2rem d-flex flex-parent-center tc-white family-[sans-serif] br-8px w-100% h-100px gradient gradient-to-l gradient-from-blue gradient-to-lime-300 hover:gradient-from-fuchsia-400 hover:gradient-to-red-400"
+      >
+        hover me
+      </div>
+    </main>
+    <script>
+      console.log(gradient.classes);
+
+      use({ property: [property, gradient.property], classes: gradient.classes });
+      tenoxui();
+    </script>
+  </body>
+</html>
