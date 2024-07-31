@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../../src/@tenoxui/tenoxui.js"></script>
+    <script src="../../src/@tenoxui/property.js"></script>
+    <script src="../../src/lib/color.js"></script>
+    <script src="../../src/utils/generate-color.js"></script>
+    <script src="../../src/utils/merge-classes.js"></script>
+    <script src="./theme.js"></script>
+  </head>
+  <body>
+    <main class="d-flex flex-parent-center fd-column">
+      <!-- basic usage -->
+      <div class="box-100px br-8px bg-red-400 hover:bg-sky-400 tr-time-0.3s"></div>
+    </main>
+    <script>
+      console.log(theme.classes);
+
+      use({ property: [property, theme.property], classes: theme.classes });
+      tenoxui();
+    </script>
+  </body>
+</html>
