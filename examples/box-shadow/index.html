@@ -10,7 +10,7 @@
     <script src="../../src/color.js"></script>
     <script src="../../src/utils/generate-color.js"></script>
     <script src="../../src/utils/merge-classes.js"></script>
-    <script src="../../src/box-shadow.js"></script>
+    <script src="./box-shadow.js"></script>
   </head>
   <body>
     <main class="d-flex w-100 flex-parent-center fd-column">
@@ -24,6 +24,8 @@
       ></div>
       <div class="box-100px br-8px mt-2rem shadow-inner"></div>
       <div class="box-100px bg-red br-8px mt-2rem shadow-none"></div>
+      <div class="box-100px br-8px mt-5rem shadow-md hover:shadow-xl tr-time-0.3"></div>
+      <div class=" shadow-md hover:shadow-xl tr-time-0.3"></div>
     </main>
     <script>
       use({ property: [property, boxShadow.property], classes: boxShadow.classes });
