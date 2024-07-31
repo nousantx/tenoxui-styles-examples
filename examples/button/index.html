@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../../src/@tenoxui/tenoxui.js"></script>
+    <script src="../../src/@tenoxui/property.js"></script>
+    <script src="../../src/lib/color.js"></script>
+    <script src="../../src/utils/generate-color.js"></script>
+    <script src="../../src/utils/merge-classes.js"></script>
+    <script src="../../src/utils/classes-converter.js"></script>
+    <script src="./button.js"></script>
+  </head>
+
+  <body class="family-[sans-serif] m-0 p-0">
+    <main class="d-flex flex-parent-center fd-column p-2rem">
+      <div class="d-flex flex-parent-center gap-1rem">
+        <button class="btn btn-sm btn-blue-400 hover:btn-blue-500">Hello</button>
+        <button class="btn btn-blue-400 hover:btn-blue-500">Hello</button>
+        <button class="btn btn-icon btn-blue-400 hover:btn-blue-500">😁</button>
+        <button class="btn btn-lg btn-blue-400 hover:btn-blue-500">Hello</button>
+      </div>
+      <div class="d-flex flex-parent-center gap-1rem mt-3rem">
+        <button class="btn btn-sm btn-neutral-900 hover:btn-neutral-700">Hello</button>
+        <button class="btn btn-neutral-900 hover:btn-neutral-700">Hello</button>
+        <button class="btn btn-icon btn-neutral-900 hover:btn-neutral-700">😁</button>
+        <button class="btn btn-lg btn-neutral-900 hover:btn-neutral-700">Hello</button>
+      </div>
+    </main>
+    <script>
+      use({ property: [property, button.property], classes: button.classes });
+      tenoxui();
+    </script>
+  </body>
+</html>
