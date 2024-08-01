@@ -7,6 +7,7 @@ This repository contains examples of creating styles, utility, and accessible cl
 - [`box-shadow`](./examples/box-shadow)
 - [`gradient background`](./examples/gradient)
 - [`flexbox`](./examples/flexbox) and [`grid`](./examples/grid)
+- [`button` variant](./examples/button)
 - [Manipulating `color` & `background-color`](./examples/themes)
 
 Other than that, you will learn more about :
